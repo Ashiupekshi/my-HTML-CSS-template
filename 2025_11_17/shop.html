@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop - E-Commerce</title>
+    <link rel="stylesheet" href="css\style.css">
+    
+</head>
+<header id="main-header">
+    <div class="top-bar">
+        <span>Free Shipping on all orders over Rs. 5000!</span>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">
+            <h1><a href="index.html">ASHIYA</a></h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html"  class="active">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="utility-icons">
+            <a href="#" class="search-icon" aria-label="Search">
+                🔍
+            </a>
+            
+            <a href="cart.html" class="cart-icon" aria-label="Shopping Cart">
+                🛒 
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+
+     <nav class="navbar">
+        <div class="logo">NATURE.</div>
+        <div class="nav-icons">
+            <div class="cart-icon" onclick="toggleCart()">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <header class="page-header">
+        <h1>Shop Our Collection</h1>
+        <p>Handpicked organic goodness for you.</p>
+    </header>
+
+    <div class="container">
+        <!-- Product Grid  -->
+        <div id="product-container" class="product-grid">
+            <!-- Products will appear here -->
+        </div>
+
+        <!-- Pagination Controls -->
+        <div id="pagination" class="pagination">
+            <!-- Pagination buttons will appear here -->
+        </div>
+    </div>
+
+    <!-- Shopping Cart Sidebar (Hidden by default) -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+            <!-- Selected items will appear here -->
+            <p class="empty-msg">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="total">Total: $<span id="cart-total">0.00</span></div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast">Item added to cart!</div>
+
+    <!-- JavaScript File Linking -->
+    <script src="shop-script.js"></script>
+
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-row">
+            
+            <!-- Column 1: Brand Info -->
+            <div class="footer-col">
+                <h3 class="footer-logo">NATURE.</h3>
+                <p class="footer-desc">
+                    Handcrafted organic soaps and candles made with love and natural ingredients. Pure, simple, and sustainable.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shop Collection</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Customer Care -->
+            <div class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Newsletter -->
+            <div class="footer-col">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to get special offers and nature-inspired news.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+        
+        <!-- Copyright Bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2023 Nature Intended. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+    <!-- Script file link -->
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<header id="main-header">
+    <div class="top-bar">
+        <span>Free Shipping on all orders over Rs. 5000!</span>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">
+            <h1><a href="index.html">ASHIYA</a></h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="utility-icons">
+            <a href="shop.html" class="search-icon" aria-label="Search">
+                🔍
+            </a>
+            
+            <a href="cart.html" class="cart-icon" aria-label="Shopping Cart">
+                🛒 
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+</header>
+<body>
+    
+<header class="cart-header">
+        
+        <a href="shop.html" class="continue-shopping"><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+    </header>
+
+    <div class="container cart-wrapper">
+        
+        <!-- Cart Items Table -->
+        <div class="cart-items-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-table-body">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Cart Summary (Total Calculation) -->
+        <div class="cart-summary">
+            <h3>Cart Totals</h3>
+            <div class="summary-item">
+                <span>Subtotal</span>
+                <span id="sub-total">$0.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Shipping</span>
+                <span>$5.00</span>
+            </div>
+            <hr>
+            <div class="summary-item total">
+                <span>Grand Total</span>
+                <span id="grand-total">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+
+    </div>
+
+    <script src="cart-script.js"></script>
+</body>
+</html>
