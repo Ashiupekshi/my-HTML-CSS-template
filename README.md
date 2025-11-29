@@ -1,2 +1,2 @@
 # my-HTML-CSS-template
-A clear GTML/CSS/JS template for projects
+A clear HTML/CSS/JS template for projects
